@@ -1,0 +1,587 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-buttons .login {
+    background: transparent;
+    color: #333;
+}
+
+.auth-buttons .signup {
+    background: #1a73e8;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 150vh;
+   position: relative;
+}
+.hero-background{
+    display: flex;
+    width: 100%;
+}
+.hero-background img{
+    width: 40%;
+}
+.image-bg{
+    margin-left: -30vh;
+}
+.hero-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    backdrop-filter: blur(10px);
+}
+.hero-text-container{
+    width: 60%;
+    margin-top: 20px;
+    text-align: center;
+   position: relative;
+}
+.highlight-stroke{
+    position: absolute;
+    top: 47%;
+    right: 40%;
+    width: 170px;
+}
+.hero h1 {
+    font-size: 36px;
+    line-height: 12vh;
+    color: #2b2b2b;
+}
+
+.hero .highlight {
+    color: #1a73e8;
+}
+
+
+.hero p {
+    font-size: 18px;
+    margin: 30px 0;
+    color: #666;
+}
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #1a73e8;
+    color: white;
+    border: none;
+}
+
+.secondary-btn {
+    background: white;
+    border: none;
+    color: #1a73e8;
+}
+.hero-group-2{
+    width: 50%;
+    height: 40vh;
+    margin: 10vh 0vh;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.hero-group-2-img{
+    transform: rotate(20deg);
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    z-index: -1;
+    width: 200px;
+}
+.hero-group-2-content{
+    width: 80%;
+    height: 80%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #666;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero-group-2-content-icon{
+    display: flex;
+}
+.hero-group-2-content-icon img{
+    width: 18%;
+}
+.under-image{
+    width: 80%;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: white;
+}
+.stats .highlight{
+    color: #1a73e8;
+}
+.stat-box-1{
+    line-height: 10px;
+    font-size: 25px;
+}
+.stat-box-2{
+    display: flex;
+}
+.stat-box{
+    width: 30%;
+}
+.stat-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.why{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-box-1{
+    width: 30%;
+}
+.why-box-2{
+    width: 60%;
+    margin: 0 auto; /* Center the container */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows, height adjusts automatically */
+    gap: 10px;  /* Space between boxes */
+    padding: 20px;
+}
+.why-box-2-sub h2{
+    font-size: 30px;
+}
+.why-box-2-sub p{
+    font-size: 15px;
+}
+.pricing {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing .highlight {
+    color: #1a73e8;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+   
+    width: 250px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.basic{
+    height: 50vh;
+    border-radius: 10px 0px 0px 10px;
+}
+.teams{
+    height: 50vh;
+    border-radius: 0px 10px 10px 0px;
+
+}
+.professional{
+    background-color: #1E3448;
+  height: 60vh;
+}
+.plan h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.plan p {
+    font-size: 18px;
+    color: #1a73e8;
+    font-weight: 700;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+.subscribe{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1E3551, #0D1B2A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    margin-bottom: 10vh;
+}
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* URL Shortener Box */
+.url-shortener-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Input Box */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Row for Dropdown & Alias */
+.input-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Dropdown */
+.dropdown {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Small Input Box */
+.input-box.small {
+    flex: 1;
+}
+
+/* Trim URL Button */
+.trim-btn {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.trim-btn:hover {
+    background: #0056b3;
+}
+
+/* Terms & Conditions */
+.terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .url-shortener-box {
+        width: 90%;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.faq-section-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.faq-section {
+    width: 60%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+.faq-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+/* FAQ Container */
+.faq-container {
+    margin-top: 20px;
+}
+
+/* FAQ Items */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+/* Hide checkboxes */
+.faq-item input {
+    display: none;
+}
+
+/* FAQ Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.faq-question::after {
+    content: "+";
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Show answer when clicked */
+.faq-item input:checked + .faq-question + .faq-answer {
+    display: block;
+}
+
+/* Change icon when clicked */
+.faq-item input:checked + .faq-question::after {
+    content: "-";
+}
+
+/*<header class="navbar">
+<div class="logo">SCISSOR</div>
+<nav>
+    <ul>
+        <li><a href="#">My URLs</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">FAQs</a></li>
+    </ul>
+</nav>
+<div class="auth-buttons">
+    <button class="login">Log in</button>
+    <button class="signup">Try for free</button>
+</div>
+</header>
+<h1>Optimize Your Online Experience with Our <span class="highlight">URL Shortening</span> Solution</h1>
+<p>Personalize your shortened URLs to align with your brand identity. Utilize custom slugs, branded links, and domain customization options.</p>
+<div class="hero-buttons">
+    <button class="primary-btn">Sign Up</button>
+    <button class="secondary-btn">Learn more</button>
+</div>*/
+
+
+.footer {
+    background: #fff;
+    padding: 40px 80px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Section (Logo & Social Icons) */
+.footer-left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Links */
+.footer-links {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 14%;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}

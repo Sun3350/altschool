@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width:100%;
+    height: 100vh;
+}
+.box-one{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sub-box-one{
+   width: 60%;
+   height: 70%;
+   text-align: left;
+  
+}
+.box-two{
+    width: 100%;
+    height: 50%;
+    background-color: #666666;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0vh 5vh 0vh;
+}
+span{
+    color: aqua;
+    font-weight: 700;
+}
+h1{
+    margin: 20px 0px 30px 0px ;
+}
+.sub-box-one p{
+  font-size: 15px;
+  width: 40%;
+  padding-right: 20px;
+}
+.box-one-text{
+    width: 45%;
+    line-height: 30px;
+    margin: 30px 0px 20px 0px ;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.sub-box-two{
+  width: 50%;
+  height: auto;
+  background-color: white;  
+  padding-bottom: 10px;
+}
+.box-two-header{
+   width: fit-content;
+    height: 60px;
+    background-color: #cc9900;
+    margin: 5px 0px 0px -10px;
+}
+.header{
+    background-color: #ffbf00;
+  
+    height: 90%;
+  padding: 20px 10px 20px 10px;
+    font-size: 15px ;
+    font-weight: 800;
+}
+.sub-box-two-text{
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.span-p{
+    margin-top: 15px;
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .sub-box-one{
+        width: 100%;
+        padding: 10px;
+       
+    }
+    .sub-box-two{
+        width: 100%;
+    }
+    .box-two-header{
+        margin: 5px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 550px){
+    .box-one-text, .sub-box-one p{
+        width: 100%;
+    }
+    .sub-box-two-text{
+        font-size: 13px;
+    }
+    .container{
+        height: 120vh;
+    }
+}
